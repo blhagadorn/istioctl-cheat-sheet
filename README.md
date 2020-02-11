@@ -5,3 +5,6 @@ Check TLS for foo pod in default namespace
 
 Open Istio dashboard  
 `istioctl dashboard grafana`
+
+Open Pilot Dashboard
+`istioctl dashboard controlz $(kubectl get pod -n istio-system -l app=pilot -o jsonpath='{..metadata.name}').istio-system`
