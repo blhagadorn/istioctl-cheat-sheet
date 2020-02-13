@@ -1,6 +1,9 @@
 # Cheat Sheet for Istioctl (and Istio in general)
 
-Look at all Proxies (data and control plane included 
+Verify Istio install 
+`istioctl verify-install`
+
+Look at all proxies status 
 `istioctl proxy-status`
 
 Check TLS for foo pod in default namespace  
